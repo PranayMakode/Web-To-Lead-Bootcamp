@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(240, 233, 255);
+}
+h1{
+    text-align: center;
+}
+input,label{
+    display: block;
+}
+label{
+    color: green;
+}
+input{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+form{
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+/* Class based CSS */
+.submit{
+    margin: 15px auto 0 auto;
+    width: 30%;
+    height: 30px;
+    background-color: rgb(248, 169, 248);
+    border-color: rgb(248, 169, 248);
+    border-radius: 5px;
+}
+/*
+DEFINITION: Shorthand property to set values for the thickness of the margin area. If left is omitted, it is the same as right. If bottom is omitted it is the same as top, if right is omitted it is the same as top. Negative values for margin properties are allowed, but there may be implementation-specific limits.
+
+Clockwise starting from top 
+margin top right bottom left
+*/
