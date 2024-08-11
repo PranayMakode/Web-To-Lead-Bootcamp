@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web To Lead Form</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -16,6 +17,7 @@
     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5g00000AvlNZ" method="POST" onsubmit="beforeSubmit()">
     
         <!-- HIDDEN fields to capture data -->
+        <input type=hidden name='captcha_settings' value='{"keyname":"WebToLeadBootCamp","fallback":"true","orgId":"00D5g00000AvlNZ","ts":""}'>
         <input type=hidden name="oid" value="00D5g00000AvlNZ">
         <input type=hidden name="retURL" value="https://pranaymakode.github.io/Web-To-Lead-Bootcamp/">
         <!-- <input type=hidden name="retURL" value="http://trailhead.salesforce.com/"> -->
@@ -47,7 +49,9 @@
         <!-- Lead Date:<span class="dateInput dateOnlyInput"><input  id="00NJ1000000XTdz" name="00NJ1000000XTdz" size="12" type="text" /></span><br> -->
         
         <input class="submit" type="submit" name="submit">
-    
+        <!-- NOTE: Recaptcha doesn't work on the local server -->
+        <div class="g-recaptcha" data-sitekey="6Lf5diQqAAAAANQ2vuXe9rvLJ0FYXYvu72EsIZp6"></div><br>
+
     </form>
     
 </body>
